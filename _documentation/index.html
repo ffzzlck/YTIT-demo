@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link href="img/favicon.png" rel="icon" type="image/png">
+    <!--  Page Title  -->
+    <title>Documentation for Rou - Digital Agency landing page</title>
+    <!-- =====================================
+    ============   ALL CSS HERE   ============
+    ====================================== -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="documentation_menu">
+            <h3 class="font-weight-bold">List of Contents</h3>
+            <ul class="list-unstyled">
+                <li><a href="#html_stc">HTML Structure</a></li>
+                <li><a href="#mail_add">Email Setting</a></li>
+                <li><a href="#css_stc">Css Files &amp; Structure</a></li>
+                <li><a href="#js_stc">JavaScript Files &amp; Structure</a></li>
+            </ul>
+        </div>
+        <div class="documentation_content">
+            <div class="page_breadcamb text-center">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="display_table">
+                                <div class="display_table_cell">
+                                    <h2>Documentation for <span class="font-weight-bold">Rou</span> - Rou - Digital Agency landing page</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="template_info">
+                            <p><b>Template Name:</b> Rou - Digital Agency landing page</p>
+                            <p>Created by: <a href="https://www.templatemonster.com/authors/webthemes/">webthemes</a></p>
+                            <p class="mt-5">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact from <a href="https://www.templatemonster.com/authors/webthemes/">here</a>.</p>
+                        </div>
+                        <h2 id="html_stc" class="mt-5 pt-4 pb-4">Html Structure</h2>
+                        <h4><b>Logo</b></h4>
+                        <p>Change the <span class="bg-red">red marked</span> img src</p>
+<pre>
+    &lt;div class=&quot;col-md-3 col-4 &quot;&gt;
+      &lt;!-- logo --&gt;
+      &lt;a href=&quot;#&quot;&gt;
+      &lt;img src=&quot; class=&quot;img-fluid logo-img&quot; <span class="bg-red">img/logo.png</span>&quot; alt=&quot;logo&quot;/&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+</pre>
+
+                        <h4 id="mail_add" class="pt-5"><b>Email Address</b></h4>
+                        <p>Change the <span class="bg-red">red marked</span> email address from the file <span class="bg-red">mailer.php</span> line no. 22 (<span class="bg-red">mailer.php</span> is in php folder)</p>
+                        <p>Edit this from <span class="bg-red">php</span> folder then <span class="bg-red">mailer.php</span> file - line no. 22</p>
+<pre>
+    // Set the recipient email address.
+    // FIXME: Update this to your desired email address.
+    $recipient = &quot;<span class="bg-red">info@example.com</span>&quot;;
+</pre>
+
+
+
+                        <h2 id="css_stc" class="mt-5 pt-4 pb-4">CSS Files &amp; Structure</h2>
+                        <h4><b>CSS Files</b></h4>
+<pre>
+    &lt;!-- all css link --&gt;
+    &lt;link href=&quot;css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;css/helper.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;css/fontawesome.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+    &lt;link href=&quot;css/owl.carousel.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;css/responsive.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+</pre>
+                        <h4 class="mt-5"><b>Changing Font</b></h4>
+                        <p>Rou uses 1 Font family: <span class="bg-red">'Overpass'</span> (Default) from the Google Fonts Library. To change the Font, you will need to Edit the Bottom Link with your Custom Font link</p>
+                        <p>If you plan to use a Self Hosted font. Here is an Example for using <a href="http://css-tricks.com/snippets/css/using-font-face/">Self Hosted Font</a>.</p>
+<pre>
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700;800;900&display=swap');
+</pre>
+                        
+                        <h2 id="js_stc" class="mt-5 pt-4 pb-4">Javascript Files &amp; Structure</h2>
+                        <h4><b>Javascript Files</b></h4>
+<pre>
+    &lt;!-- All Js here --&gt;
+    &lt;script src=&quot;js/jquery-3.5.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/plugin.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/contact.js&quot;&gt;&lt;/script&gt;
+</pre>
+                        <h4 class="mt-5"><b>Custom JS coding standard:</b></h4>
+<pre>
+    /*----------------------------
+        Hamburger menu
+    ----------------------------*/
+    $('.hamburger-menu, .menu li a').on('click', function () {
+        $('.line-top, .line-center, .line-bottom, .menu').toggleClass('current');
+    })
+    /*----------------------------
+        smilar product carousel
+    ----------------------------*/
+    $('.owl-carousel.testimonial-carousel').owlCarousel({
+        dots: true,
+        loop: true,
+        margin: 30,
+        nav: false,
+        smartSpeed:600,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            375: {
+                items: 1
+            },
+            767: {
+                items: 1
+            },
+            992: {
+                items: 1
+            },
+            1200: {
+                items: 1
+            }
+        }
+    });
+    /*----------------------------
+        smilar product carousel
+    ----------------------------*/
+</pre>
+                        
+                        <p class="mb-5">Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme feel free to email via my user page contact from  <a href="https://www.templatemonster.com/authors/webthemes/">here</a>.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
